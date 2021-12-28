@@ -121,8 +121,19 @@
               "devServerTarget": "demo-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "demo-app:build:production",
+            "firebaseProject": "todo-demo-app-angular-3a07c",
+            "firebaseHostingSite": "todo-demo-app-angular-3a07c"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "demo-app"
 }
